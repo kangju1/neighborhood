@@ -20,7 +20,7 @@ var ViewModel = function(){
 
 	self.filterList = function(){
 
-		if(self.filterValue() == undefined){
+		if(self.filterValue() === undefined){
 
 			self.filteredList(self.markersList());
 			hideMarkers(markers);
@@ -38,7 +38,7 @@ var ViewModel = function(){
 			self.filterValue(undefined);
 		}
 
-	}
+	};
 
 	self.showFromList = function(listItem){
 
@@ -49,7 +49,7 @@ var ViewModel = function(){
 			}
 		});
 
-	}
+	};
 
 };
 
