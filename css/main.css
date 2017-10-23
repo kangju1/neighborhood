@@ -1,0 +1,22 @@
+a, a:hover, a:visited{
+	text-decoration: none;
+}
+
+#close-btn{
+	margin-bottom: 10px;
+}
+#header{
+	margin-left: 300px;
+	height: 100%;
+}
+
+#mySidebar{
+	width: 300px;
+	padding: 10px 10px;
+}
+
+#main{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}

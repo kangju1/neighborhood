@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/main.css">
+    <title>Naborhood</title>
+</head>
+<body>
+<div id="main">
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2 w3-animate-left" id="mySidebar">
+    	<button id="close-btn" class="w3-bar-item w3-button w3-large w3-hide-large" onclick="sidebarClose()">Close &times;</button>
+        <input type="text" data-bind="text: filterValue, value: filterValue, valueUpdate: 'afterkeydown'">
+        <button id="filter-btn" data-bind="click: filterList">Filter</button>
+        <div data-bind="foreach: filteredList">
+        	<span href="#" class="w3-bar-item w3-button" data-bind="text: title, click: $root.showFromList"></span>
+        </div>
+    </div>
+    <div id="header" class="w3-main">
+		<div class="w3-teal">
+		  	<button class="w3-button w3-teal w3-xlarge" onclick="sidebarOpen()">&#9776;</button>
+		</div>
+		<div id="map" style="height: 100%"></div>
+	</div>
+<script src="js/lib/knockout-3.2.0.js"></script>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/google_map.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAnhFKYkbfN90bB_DxOSg4dtVd9d3-Tw94&v=3&callback=initMap">
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>
