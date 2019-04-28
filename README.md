@@ -2,9 +2,9 @@
 This is a project that I've done for Udacity Full Nanodegree Program.
 
 ## About
-This application is for searching some interesting places in New York. you can do the following on this application:
+This application is for searching some interesting places in New York. you can do the followings on this application:
 
-1. See all the places
+1. Check out all the places
 2. Search certain places
 3. read articles about the places
 
